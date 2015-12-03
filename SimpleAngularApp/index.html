@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr" data-ng-app="myDemoApp">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Todo List</title>
+	<script src="js/angular.min.js"></script>
+</head>
+
+<body>
+	<div ng-controller="mySimpleController">
+		Name:
+		<input type="text" ng-model="name"></input>
+		<br />
+		<ul>
+			<li ng-repeat="writterInfo in names | filter:name | orderBy:'city'">{{writterInfo.name}} from {{writterInfo.city | uppercase}}</li>
+		</ul>
+	</div>
+	<script src="js/simpleController.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<div class="container">
+	<h1>View1</h1> Name:
+	<input type="text" ng-model="name"></input>
+	<br />
+	<ul>
+		<li ng-repeat="writterInfo in names | filter:name | orderBy:'name'">{{writterInfo.name}} from {{writterInfo.city | uppercase}}</li>
+	</ul>
+</div>
