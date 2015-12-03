@@ -15,7 +15,6 @@ var demoApp = angular.module('demoApp', [
  */
 var todoList = angular.module('todoList',[]);
 
-
 /**
  * Contrôleur de l'application "Todo List" décrite dans le chapitre "La logique d'AngularJS".
  */
@@ -64,3 +63,11 @@ todoList.controller('todoCtrl', ['$scope',
         };
     }
 ]);
+
+todoList.controller('personCtrl', function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+    $scope.fullName = function() {
+        return $scope.firstName + " " + $scope.lastName;
+    };
+});
