@@ -1,0 +1,16 @@
+<div class="container">
+	<h1>View1</h1> Name:
+	<input type="text" ng-model="filter.name"></input>
+	<br />
+	<ul>
+		<li ng-repeat="writterInfo in names | filter:filter.name | orderBy:'filter.name'">{{writterInfo.name}} from {{writterInfo.city | uppercase}}</li>
+	</ul>
+	Customer Name : 
+	<input type="text" ng-model="newCustomer.name"></input>
+	<br />
+	Customer city : 
+	<input type="text" ng-model="newCustomer.city"></input>
+	<br />
+	<button ng-click="addCustomer()">Add</button>
+	<a href="#/view2">Vue 2</a>
+</div>
