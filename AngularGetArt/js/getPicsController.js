@@ -11,18 +11,4 @@ controllers.mySimpleController = function ($scope, namesFactory) {
 	}
 };
 
-controllers.convertXmlController = function($scope,getUrlFactorie){
-
-          $scope.infos = [];
-        //   loadTodos();
-          
-        //   function loadTodos(){
-        //     getUrlFactorie.getUrl().success(function(data){
-        //         infosPic  = x2js.xml_str2json(data);
-        //         console.log(infosPic.channel.item.link);
-        //         $scope.infos = infosPic.channel.item.link;
-        //         });
-        //     }
-        };
-
 controllersMod.controller(controllers);
