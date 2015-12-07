@@ -12,6 +12,9 @@
 
 <body ng-controller="FeedCtrl">
 	<div class="container">
+		<h2>My feeds</h2>
+		<p>This is a still in work small angularJS application I made, gathering RSS feeds of websites I like around the web
+		</p>
 		<div ng-repeat="feed in feeds | orderBy:'title'">
 			<h2><a href="{{feed.link}}" target="_blank">{{feed.title}}</a></h2>
 			<p>
