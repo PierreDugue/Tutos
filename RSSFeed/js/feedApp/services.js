@@ -7,6 +7,7 @@ servicesModule.service('FeedList', function ($rootScope, FeedLoader) {
 			{ title: 'ZDnet', url: 'http://www.zdnet.fr/feeds/rss/actualites/' },
 			{ title: 'NYT', url: 'http://rss.nytimes.com/services/xml/rss/nyt/InternationalHome.xml' }
 		];
+		
 		if (feeds.length === 0) {
 			for (var i = 0; i < feedSources.length; i++) {
 				FeedLoader.fetch({ q: feedSources[i].url, num: 10 }, {}, function (data) {
