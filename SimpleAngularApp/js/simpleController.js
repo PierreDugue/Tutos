@@ -33,8 +33,6 @@ myDemoApp.factory('simpleFactory', function(){
 var controllers = {};
 controllers.mySimpleController = function ($scope, simpleFactory) {
 	$scope.names = [];
-	
-	
 	$scope.names = simpleFactory.getCustomers();
 	
 	$scope.addCustomer = function () {
