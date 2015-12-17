@@ -4,9 +4,11 @@
 		<div ng-repeat="article in articles">
 			<h2>{{article.title}}</h2>
 			<p>{{article.text}}</p>
+			<img ng-src="{{article.img}}"></img>
 		</div>
 	</div>
 	<input type="text" ng-model="article.title"></input>
 	<input type="text" ng-model="article.text"></input>
+	<input type="text" ng-model="article.img"></input>
 	<button ng-click="addNewArticle()">Add</button>
 </div>
