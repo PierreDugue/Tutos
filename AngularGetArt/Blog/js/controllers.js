@@ -6,5 +6,8 @@ blogApp.controller('afficheMain', function ($scope, mainFactory) {
 	$scope.addNewArticle = function () {
 		$scope.articles.push({title: $scope.article.title, text: $scope.article.text, img: $scope.article.img});
 	}
+	
+	$scope.testMethode = function(){
+	}
 
 });
