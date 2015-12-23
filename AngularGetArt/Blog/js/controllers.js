@@ -15,6 +15,6 @@ blogApp.controller('afficheMain', function ($scope, mainFactory, $http) {
 
 });
 
-blogApp.controller('afficheDetails', ['$scope', '$routeParams', function ($scope, mainFactory) {
-	$scope.phoneId = $routeParams.phoneId;
+blogApp.controller('afficheDetails', ['$scope', '$routeParams', function ($scope, $routeParams) {
+	$scope.entryId = $routeParams.entryId;
 }]);
