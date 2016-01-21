@@ -13,7 +13,13 @@
 		<title>Pierre DUGUE</title>
 
 		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 		<link href="main.css" rel="stylesheet">
+		<script type="text/javascript " src="../bootstrap/js/jquery-2.1.4.min.js "></script>
+		<script type="text/javascript " src="../bootstrap/js/bootstrap.min.js "></script>
+		<script type="text/javascript " src="js/jquery.fullpage.min.js "></script>
+		<script type="text/javascript " src="js/jquery.foggy.min.js "></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	</head>
 </head>
 
@@ -53,124 +59,128 @@
 	</nav>
 	<div id="header">
 	</div>
-	<div id="main" class="container">
-		<div id="resume">
-			<div id="resumeBlock" class="ancre"></div>
-			<h1 class="bordered">Absctract</h1>
-			<p>
-				I'm a french software engineer, passionate by new technologies, photograpie, drawing and guitare. I have 4 years experience
-				in developpment in both front-end and back end technologies like Java/J2EE, but am as well very interested in new Javascript
-				framework such as angularJS or reactJS. I enjoy going on meetups, learning and talking about my favorite subjects (code,
-				guitare music...).
-			</p>
-		</div>
-		<div class="interBlock">
-		</div>
-		<div id="skills" class="row">
-			<div id="skillsBlock" class="ancre"></div>
-			<h1 class="bordered">My skills</h1>
-			<div class="row row-centered skills-img-block">
+	<div id="main">
+		<div id="fullpage">
 
-				<div class="col-md-4 col-centered">
-					<img class="img-circle skills-img" src="images/code-1.jpg"></img>
+			<div id="resume" class="section">
+				<div class="backgroundSection">
+					<h1 class="bordered">Absctract</h1>
 					<p>
-						<h3>IT</h3> I have skills in severals programation langage such as JAVA/J2EE, HTML/CSS, Javascript. As I am really interested in AngularJS as well, I made some small personnal projects. You can see my ongoing feed project <a href="/RSSFeed">here</a>. See more details in my resume.
-					</p>
-				</div>
-				<div class="col-md-4">
-					<img class="img-circle skills-img" src="images/blur-lights.jpg"></img>
-					<p>
-						<h3>Web design</h3> Passionate by graphics. I can use Photoshop (CS6), Illustrator, code in CSS/LESS and use JQUERY/JQUERY-UI, Bootstrap.
-						Good knowledge of Responsive Design and its implementation across browsers and device.
-					</p>
-				</div>
-				<div class="col-md-4">
-
-					<img class="img-circle skills-img" src="images/communicate.gif"></img>
-					<p>
-						<h3>Functional</h3> Good communication skills, Technical and functionnal test (redacting test plan), Good understanding of User Experience
-						focused on web standards
+						I'm a french software engineer, passionate by new technologies, photograpie, drawing and guitare. I have 4 years experience
+						in developpment in both front-end and back end technologies like Java/J2EE, but am as well very interested in new Javascript
+						framework such as angularJS or reactJS. I enjoy going on meetups, learning and talking about my favorite subjects (code,
+						guitare music...).
 					</p>
 				</div>
 			</div>
-		</div>
-		<div class="interBlock">
-		</div>
-		<div id="experience">
-			<div id="experienceBlock" class="ancre"></div>
-			<h1 class="bordered">My experience</h1>
-			<div>
-				<p>
-					<img class="img-rounded logoBoites-img" src="images/logoDocapost.png"></img>
-				</p>
-				<p>
+			<div id="skills" class="section">
+				<div class="backgroundSection">
+					<h1 class="bordered">My skills</h1>
+					<!--<div class="row row-centered skills-img-block">
 
-					March 2014 - Octobre 2015 : Consultant for DOCAPOST (Digital arm of LA POSTE group. DOCAPOST propose a range of offer for
-					the managing of professional document exchange.) I was working on a team on severals “from scratch” projects
-					<dl class="dl-horizontal">
-						<dt>MGEN</dt>
-						<dd>Health care project in Java/J2EE and Liferay.</dd>
-						<dt>LR COPRO</dt>
-						<dd>electronic registered letters in Java/J2EE. I was in charge of both front-end (responsive design using Bootstrap 3
-							and Thymeleaf) and back-end (using Java/J2EE, with Spring 3, Hibernate and SpringBoot).</dd>
-						<dt>NEWTON</dt>
-						<dd> Proof of concept for a connected objects project in Java/J2EE and Grails. Working on debugging the production LR COPRO
-							application.
-						</dd>
-					</dl>
+					<div class="col-md-4 col-centered">
+						<img class="img-circle skills-img" src="images/code-1.jpg"></img>
+						<p>
+							<h3>IT</h3> I have skills in severals programation langage such as JAVA/J2EE, HTML/CSS, Javascript. As I am really interested
+							in AngularJS as well, I made some small personnal projects. You can see my ongoing feed project <a href="/RSSFeed">here</a>.
+							See more details in my resume.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<img class="img-circle skills-img" src="images/blur-lights.jpg"></img>
+						<p>
+							<h3>Web design</h3> Passionate by graphics. I can use Photoshop (CS6), Illustrator, code in CSS/LESS and use JQUERY/JQUERY-UI, Bootstrap.
+							Good knowledge of Responsive Design and its implementation across browsers and device.
+						</p>
+					</div>
+					<div class="col-md-4">
 
-
-				</p>
+						<img class="img-circle skills-img" src="images/communicate.gif"></img>
+						<p>
+							<h3>Functional</h3> Good communication skills, Technical and functionnal test (redacting test plan), Good understanding of User Experience
+							focused on web standards
+						</p>
+					</div>
+				</div>-->
+				</div>
 			</div>
-			<div>
+			<div id="experience" class="section">
+				<div class="backgroundSection">
+					<h1 class="bordered">My experience</h1>
+					<!--<div>
+						<p>
+							<img class="img-rounded logoBoites-img" src="images/logoDocapost.png"></img>
+						</p>
+						<p>
 
-				<p>
-					<img class="img-rounded logoBoites-img" src="images/capgemini-logo.jpg"></img>
-				</p>
-				<p>
-					Feburary 2011 - March 2013 : Consultant for CAPGEMINI (Cap Gemini is a French multinational management consulting corporation
-					headquartered in Paris, France.It provides IT services and is one of the world's largest consulting, outsourcing and
-					professional services companies with 180,000 employees in over 40 countries)
-					<dl class="dl-horizontal">
-						<dt>TMA</dt>
-						<dd> Working on a Tierce Maintenance Applicative (TMA) for VIRBAC (Virbac is a French company dedicated exclusively to animal
-							health). My role was to debug several applications from different technologies such as Java/J2EE, Lotus Script and
-							Windev.
-						</dd>
+							March 2014 - Octobre 2015 : Consultant for DOCAPOST (Digital arm of LA POSTE group. DOCAPOST propose a range of offer for
+							the managing of professional document exchange.) I was working on a team on severals “from scratch” projects
+							<dl class="dl-horizontal">
+								<dt>MGEN</dt>
+								<dd>Health care project in Java/J2EE and Liferay.</dd>
+								<dt>LR COPRO</dt>
+								<dd>electronic registered letters in Java/J2EE. I was in charge of both front-end (responsive design using Bootstrap
+									3 and Thymeleaf) and back-end (using Java/J2EE, with Spring 3, Hibernate and SpringBoot).</dd>
+								<dt>NEWTON</dt>
+								<dd> Proof of concept for a connected objects project in Java/J2EE and Grails. Working on debugging the production LR
+									COPRO application.
+								</dd>
+							</dl>
 
-						<dt>Customer relationship management</dt>
-						<dd> Elaborate evolutions for existing applications with the client. Keep the client aware of the progression.</dd>
-					</dl>
-				</p>
+
+						</p>
+					</div>
+					<div>
+
+						<p>
+							<img class="img-rounded logoBoites-img" src="images/capgemini-logo.jpg"></img>
+						</p>
+						<p>
+							Feburary 2011 - March 2013 : Consultant for CAPGEMINI (Cap Gemini is a French multinational management consulting corporation
+							headquartered in Paris, France.It provides IT services and is one of the world's largest consulting, outsourcing and
+							professional services companies with 180,000 employees in over 40 countries)
+							<dl class="dl-horizontal">
+								<dt>TMA</dt>
+								<dd> Working on a Tierce Maintenance Applicative (TMA) for VIRBAC (Virbac is a French company dedicated exclusively to
+									animal health). My role was to debug several applications from different technologies such as Java/J2EE, Lotus Script
+									and Windev.
+								</dd>
+
+								<dt>Customer relationship management</dt>
+								<dd> Elaborate evolutions for existing applications with the client. Keep the client aware of the progression.</dd>
+							</dl>
+						</p>
+					</div>-->
+				</div>
 			</div>
-		</div>
-		<div class="interBlock">
-		</div>
-		<div id="formation">
-			<div id="formationBlock" class="ancre"></div>
-			<h1 class="bordered">My formation</h1>
-			<p>
-				<b>2011 ESIL (Ecole supérieur d’ingénieur de Luminy)</b> : Master degree in IT, network and multimedia. Major 6 months
-				project : Develop a car renting web application in Java/J2EE
-			</p>
-			<p>
-				<b>2008 IUT R&T</b> : HND in Network and telecommunications
-			</p>
-		</div>
-		<div class="interBlock">
-		</div>
-		<div id="hobbies" class="row">
-			<div id="hobbiesBlock" class="ancre"></div>
-			<h1 class="bordered">My hobbies</h1>
-			<p>
-				I am passionated gy graphics. I draw on an Intuos 4L tablet, and use Photoshop CS6. I am as well interested in photography
-				(Canon EOS 550D with a SIGMA 18-250) and I am a guitariste (2 electrics Fender/Washburn and a folk guitare Fender) Don't
-				hesitate to visit my <a target="_blank" href="http://ratahime.deviantart.com/">DeviantArt gallery</a> to see my work!
-			</p>
+			<div id="formation" class="section">
+				<div class="backgroundSection">
+					<h1 class="bordered">My formation</h1>
+					<p>
+						<b>2011 ESIL (Ecole supérieur d’ingénieur de Luminy)</b> : Master degree in IT, network and multimedia. Major 6 months
+						project : Develop a car renting web application in Java/J2EE
+					</p>
+					<p>
+						<b>2008 IUT R&T</b> : HND in Network and telecommunications
+					</p>
+				</div>
+			</div>
+			<div id="hobbies" class="section">
+				<div class="backgroundSection">
+					<h1 class="bordered">My hobbies</h1>
+					<p>
+						I am passionated gy graphics. I draw on an Intuos 4L tablet, and use Photoshop CS6. I am as well interested in photography
+						(Canon EOS 550D with a SIGMA 18-250) and I am a guitariste (2 electrics Fender/Washburn and a folk guitare Fender)
+						Don't hesitate to visit my <a target="_blank" href="http://ratahime.deviantart.com/">DeviantArt gallery</a> to
+						see my work!
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
+
 	</div>
-	<footer class="footer">
+	<!--<footer class="footer">
 
 		<div class="row">
 			<div class="getInTouchBlock col-md-6">
@@ -194,10 +204,10 @@
 		</div>
 		Copyright © 2015 Pierre DUGUE
 		<br/> HTML5 | CSS3 | JavaScript
-	</footer>
-	<script type="text/javascript " src="../bootstrap/js/jquery-2.1.4.min.js "></script>
-	<script type="text/javascript " src="../bootstrap/js/bootstrap.min.js "></script>
-	<script type="text/javascript " src="js/main.js "></script>
+	</footer>-->
+
+	<script type="text/javascript " src="js/main.js"></script>
+
 </body>
 
 </html>
