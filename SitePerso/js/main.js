@@ -1,6 +1,8 @@
 
 $(document).ready(function () {
-    $('#fullpage').fullpage();
+    $('#fullpage').fullpage({
+        anchors:['index']
+    });
     $(".selectorNavbar").fadeTo(0, 0.15);
     $(".selectorNavbar").mouseover(function () {
         $(this).stop(true, true).fadeTo("slow", 1);
