@@ -10,6 +10,7 @@ body{
 	height: 350px;
 	padding:auto;
 	padding:50px 170px 50px 170px;
+	box-shadow: 10px 0px 5px grey;
 }
 
 #header{
