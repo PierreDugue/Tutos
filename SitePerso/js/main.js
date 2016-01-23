@@ -1,7 +1,8 @@
 
 $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
     $('#fullpage').fullpage({
-        anchors:['index']
+        anchors: ['slideAbstract']
     });
     $(".selectorNavbar").fadeTo(0, 0.15);
     $(".selectorNavbar").mouseover(function () {
