@@ -1,0 +1,14 @@
+<div class="form">
+    <!-- Form to get campaign informations -->
+    <p>Campaign name : </p>
+    <input type="text" ng-model="campaign.name"></input>
+    <p>Campaign URL : </p>
+    <input type="text" ng-model="campaign.url"></input>
+    <p>Campaign number : </p>
+    <input type="text" ng-model="campaign.num"></input>
+    <p>
+        <button ng-click="generateNames()">Add</button>
+    </p>
+
+    <span>{{campaign.name}}</span>
+</div>
