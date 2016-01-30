@@ -8,7 +8,7 @@
  * Factory in the automationApp.
  */
 angular.module('automationApp')
-    .factory('generateJs', function () {
+    .factory('generateJs', function ($http) {
 
         return {
             generateNames: function (campaign) {
@@ -17,5 +17,10 @@ angular.module('automationApp')
                 campaign[0].num = campaign[0].num + "_TEST";
                 return campaign;
             }
+            // getFromMock: function () {
+            //     return $http.get("http://www.mocky.io/v2/5185415ba171ea3a00704eed").then(function (response) {
+            //         $scope.myData = response.data.records;
+            //     });
+            // }
         };
     });

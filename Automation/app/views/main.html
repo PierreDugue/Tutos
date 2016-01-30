@@ -10,5 +10,20 @@
         <button ng-click="generateNames()">Add</button>
     </p>
 
-    <span>{{campaign.name}}</span>
+    <div ng-repeat="entry in entries">
+        <p>
+            {{entry.id}}, {{entry.title}}, {{entry.text}}
+        </p>
+    </div>
+    <div ng-repeat="campaignName in campaignTrueNames">
+        <span>{{campaignName.name}}</span>
+        <span>{{campaignName.url}}</span>
+        <span>{{campaignName.num}}</span>
+    </div>
+
+    <div ng-repeat="info in infoFromMock">
+        <span>{{info.title}}</span>
+        <span>{{info.text}}</span>
+        <span>{{info.id}}</span>
+    </div>
 </div>

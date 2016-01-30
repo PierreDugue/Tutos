@@ -17,6 +17,14 @@ angular.module('automationApp')
                 url: $scope.campaign.url,
                 num: $scope.campaign.num
             });
-            var campaignTrueNames = generateJs.generateNames(campaigns);
+
+            $scope.campaignTrueNames = generateJs.generateNames(campaigns);
+            
+            $http.get("http://www.mocky.io/v2/56ac29120f00004a4f987f67").then(function (response) {
+                console.log(response);
+                $scope.infoFromMock = response.data;
+            });
+
+           // $scope.infoFromMock = generateJs.getFromMock();
         }
     });
