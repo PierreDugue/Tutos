@@ -16,11 +16,14 @@ angular.module('automationApp')
                 campaign[0].url = campaign[0].url + "_TEST";
                 campaign[0].num = campaign[0].num + "_TEST";
                 return campaign;
+            },
+            getFromMock: function () {
+                return $http.get("http://www.mocky.io/v2/56ac29120f00004a4f987f67")
+                    .then(function (response) {
+                        return response.data;
+                    }, function (httpData) {
+                        console.log('Error lors de la récupération des infos');
+                    });
             }
-            // getFromMock: function () {
-            //     return $http.get("http://www.mocky.io/v2/5185415ba171ea3a00704eed").then(function (response) {
-            //         $scope.myData = response.data.records;
-            //     });
-            // }
         };
     });
