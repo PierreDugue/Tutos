@@ -18,7 +18,6 @@
         <script type="text/javascript " src="../bootstrap/js/jquery-2.1.4.min.js "></script>
         <script type="text/javascript " src="../bootstrap/js/bootstrap.min.js "></script>
         <script type="text/javascript " src="js/jquery.fullpage.min.js "></script>
-        <script type="text/javascript " src="js/jquery.foggy.min.js "></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     </head>
 </head>
@@ -37,11 +36,13 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="selectorNavbar"><a href="#slideAbstract">Abstract</a></li>
+                    <li class="selectorNavbar"><a href="#slideAbstract">Home</a></li>
+                    <li class="selectorNavbar"><a href="#slideHome">Abscract</a></li>
                     <li class="selectorNavbar"><a href="#slideSkills">My skills</a></li>
                     <li class="selectorNavbar"><a href="#slideExperience">My experience</a></li>
                     <li class="selectorNavbar"><a href="#slideFormation">My formation</a></li>
                     <li class="selectorNavbar"><a href="#slideHobbies">My hobbies</a></li>
+                    <li class="selectorNavbar"><a href="#slideContacts">Contacts</a></li>
                     <li class="dropdown selectorNavbar">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links <span class="caret"></span></a>
                         <ul class="dropdown-menu sousMenu">
@@ -57,19 +58,17 @@
             </div>
         </div>
     </nav>
-    <div id="header">
-    </div>
     <div id="main">
         <div id="fullpage">
-            <div id="home" class="section" data-anchor="slideHome">
-
-                <h1>Pierre DUGUE</h1>
-                <p>
-                    Full stack developper
-                </p>
-
-            </div>
             <div id="resume" class="section" data-anchor="slideAbstract">
+  
+                    <h1>Pierre DUGUE</h1>
+                    <p>
+                        Full stack developper
+                    </p>
+        
+            </div>
+            <div id="home" class="section" data-anchor="slideHome">
                 <div class="backgroundSection">
                     <h1>Abstract</h1>
                     <p>
@@ -80,41 +79,67 @@
                     </p>
                 </div>
             </div>
-            <div id="skills" class="section" data-anchor="slideSkills">
 
+
+
+            <div id="skills" class="section" data-anchor="slideSkills">
                 <h1>My skills</h1>
                 <div class="listSkills">
-                    <h2>Coding skills</h2>
-                        <div class="skillsLogo" id="skillJava"></div>
-                        <div class="skillsLogo" id="skillSpring"></div>
-                        <div class="skillsLogo" id="skillJs"></div>
-                        <div class="skillsLogo" id="skillHtml"></div>
-                        <div class="skillsLogo" id="skillCss"></div>
+                    <h3>Coding skills</h3>
+                    <div class="skillsLogo" id="skillJava"></div>
+                    <div class="skillsLogo" id="skillSpring"></div>
+                    <div class="skillsLogo" id="skillJs"></div>
+                    <div class="skillsLogo" id="skillHtml"></div>
+                    <div class="skillsLogo" id="skillCss"></div>
+                    <div class="skillsLogo" id="skillAngular"></div>
                 </div>
                 <div class="listSkills">
-                    <h2>Softwares skills</h2>
-                      <div class="skillsLogo" id="skillPs"></div>
+                    <h3>Softwares skills</h3>
+                    <div class="skillsLogo" id="skillEclipse"></div>
+                    <div class="skillsLogo" id="skillPs"></div>
+                    <div class="skillsLogo" id="skillAi"></div>
                 </div>
-                <h2>Languages</h2>
-
+                <div class="listSkills">
+                    <h3>Languages</h3>
+                    <div class="skillsLogo" id="skillFrench"></div>
+                    <div class="skillsLogo" id="skillEng"></div>
+                </div>
             </div>
             <div id="experience" class="section" data-anchor="slideExperience">
                 <div class="backgroundSection">
                     <h1>My experience</h1>
-                    <div>
-                        <p>
-                            <strong>March 2014 - October 2015: Consultant for DOCAPOST</strong> (Digital arm of LA POSTE
-                            group. DOCAPOST propose a range of offers for the managing of professional document exchange).
-                            Part of a team, I was working on severals “from scratch” projects
+                    <h2 id="flip" class="titleExp">Docapost</h2>
+                    <div id="panel" class="listExp">
+                        <h2 class="subTitleExp">March 2014 - October 2015: Developer for DOCAPOST</h2>
+                        <p>(Digital arm of LA POSTE group. DOCAPOST propose a range of offers for the managing of professional
+                            document exchange). Part of a team, I was working on severals “from scratch” projects.</p>
+                        <p> <strong>MGEN </strong>: big health care project in Java/J2EE and Liferay with a team of 15 peoples.
+                            Implementation of major functionalities and bug correction.
+                            </br>
+                            <strong> LR COPRO</strong> : electronic registered letters application in Java/J2EE. I was in
+                            charge of both front-end (responsive design using Bootstrap 3 and Thymeleaf) and back-end (using
+                            Java/J2EE, with Spring 3, Hibernate and SpringBoot) in a team of 3 peoples.
+                            </br>
+                            <strong>NEWTON </strong> : Successfully developed a proof of concept for a connected objects
+                            project in Java/J2EE and Grails.
+                            </br>
                         </p>
                     </div>
-                    <div>
+                    <h2 id="flip2" class="titleExp">Capgemini</h2>
+                    <div id="panel2" class="listExp">
+                        <h2 class="subTitleExp">Septembre 2011 - Jully 2013: Software engineer for CAPGEMINI</h2>
                         <p>
-                            <strong>Feburary 2011 - March 2013: Consultant for CAPGEMINI</strong> (Cap Gemini is a French
-                            multinational management consulting corporation headquartered in Paris, France. It provides IT
-                            services and is one of the world's largest consulting, outsourcing and professional services
-                            companies with 180,000 employees in over 40 countries).
+                            Software engineer for CAPGEMINI (Cap Gemini is a French multinational management consulting corporation headquartered in
+                            Paris, France. It provides IT services and is one of the world's largest consulting, outsourcing
+                            and professional services companies with 180,000 employees in over 40 countries)
                         </p>
+                        <p>
+                            Working on a Tierce Maintenance Applicative (TMA) for VIRBAC (Virbac is a French company dedicated exclusively to animal
+                            health). My role was to debug several applications from different technologies such as Java/J2EE,
+                            Lotus Script and Windev. - Customer relationship management : Elaborate evolutions for existing
+                            applications with the client. Keep the client aware of the progression.
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -140,38 +165,67 @@
                     </p>
                 </div>
             </div>
+            <div id="contacts" class="section" data-anchor="slideContacts">
+                <div class="backgroundSection">
+                    <h1>Contacts</h1>
+
+                    <a href="https://au.linkedin.com/in/pierre-dugué-59287644" target="_blank">
+                        <img class="imgLogo" src="images/LinkedInLogo.png"></img>
+                        Pierre DUGUE
+                    </a>
+                    </br>
+
+                    <a href="mailto:pierre.dugue1@gmail.com">
+                        <img class="imgLogo" src="images/emailLogo.png"></img>
+                        pierre.dugue1@gmail.com
+                    </a>
+
+                    </br>
+                    <a href="https://github.com/PierreDugue" target="_blank">
+                        <img class="imgLogo" src="images/gitLogo.png"></img>
+                        My github</a>
+
+                    </br>
+                    <a href="http://ratahime.deviantart.com/" target="_blank">
+                        <img class="imgLogo" src="images/daLogo.png"></img>DeviantArt</a>
+
+                    </br>
+                    <div id="centerClasse">
+                        <a class="btn btn-warning" href="documents/ResumePierreDUGUE.pdf" download>Dowload my resume</a>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 
-    </div>
     <!--<footer class="footer">
 
 		<div class="row">
 			<div class="getInTouchBlock col-md-6">
 				<h3>Get in touch</h3> Don't hesitate to contact me if you have any questions
-				<h4>Email</h4>
-				<a href="mailto:pierre.dugue1@gmail.com">pierre.dugue1@gmail.com</a>
-			</div>
-			<div class="coordBlock col-md-6">
-				<h3>My links</h3>
-				<a href="documents/ResumePierreDUGUE.pdf" download>Download my resume</a>
-				<br/>
-				<a href="https://au.linkedin.com/in/pierre-dugué-59287644" target="_blank">LinkedIn</a>
-				<br/>
-				<a href="https://github.com/PierreDugue" target="_blank">My github</a>
-				<br/>
-				<a href="http://ratahime.deviantart.com/" target="_blank">DeviantArt</a>
-				<br/>
-				<a href="https://www.instagram.com/piloubegood/" target="_blank">Instagram</a>
-				<br/>
-			</div>
-		</div>
-		Copyright © 2015 Pierre DUGUE
-		<br/> HTML5 | CSS3 | JavaScript
-	</footer>-->
+                <h4>Email</h4>
+                <a href="mailto:pierre.dugue1@gmail.com">pierre.dugue1@gmail.com</a>
+            </div>
+            <div class="coordBlock col-md-6">
+                <h3>My links</h3>
+                <a href="documents/ResumePierreDUGUE.pdf" download>Download my resume</a>
+                <br/>
+                <a href="https://au.linkedin.com/in/pierre-dugué-59287644" target="_blank">LinkedIn</a>
+                <br/>
+                <a href="https://github.com/PierreDugue" target="_blank">My github</a>
+                <br/>
+                <a href="http://ratahime.deviantart.com/" target="_blank">DeviantArt</a>
+                <br/>
+                <a href="https://www.instagram.com/piloubegood/" target="_blank">Instagram</a>
+                <br/>
+            </div>
+        </div>
+        Copyright © 2015 Pierre DUGUE
+        <br/> HTML5 | CSS3 | JavaScript
+        </footer>-->
 
     <script type="text/javascript " src="js/main.js"></script>
-
 </body>
 
 </html>

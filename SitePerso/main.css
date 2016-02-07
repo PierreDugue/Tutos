@@ -1,7 +1,23 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'icomoon';
+	src:url('fonts/icomoon/icomoon.eot?i64fx9');
+	src:url('fonts/icomoon/icomoon.eot?#iefixi64fx9') format('embedded-opentype'),
+		url('fonts/icomoon/icomoon.woff?i64fx9') format('woff'),
+		url('fonts/icomoon/icomoon.ttf?i64fx9') format('truetype'),
+		url('fonts/icomoon/icomoon.svg?i64fx9#icomoon') format('svg');
+}
+
 body{
 	background-image: url(images/FondSydney2.jpg); 
  	background-size: cover;	
 	margin-top: 60px;
+}
+
+a, a:hover{
+    color: #914214;
+    text-decoration: none;
 }
 
 .backgroundSection{
@@ -13,7 +29,7 @@ body{
 }
 
 .skillsLogo{
-	    width: 80px;
+	width: 80px;
     height: 80px;
     margin: 8px;
     padding:auto;
@@ -30,9 +46,7 @@ body{
 	font-size: 16px;
  }
 
-#home p{
-    text-align: center;
-}
+
 
 #main h1{
 	text-align: center;
@@ -41,10 +55,6 @@ body{
 	font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-#resume{
-    max-width: 400px;
-    margin: 0 auto;
-}
 
 .dropdown-menu{
 	background-image: url(images/binding_dark.png);
@@ -62,9 +72,13 @@ h1.bordered:after{
 
 .navbar{
 	text-align: center;
-	background-image: url(images/binding_dark.png);
+	background-color: rgba(23, 8, 0, 0.8);
 	background-repeat: repeat;
 	font-size:20px;
+}
+
+.selectorNavbar:hover{
+	background-color: rgba(230, 130, 87, 1);
 }
 
 .navbar-brand{
@@ -72,13 +86,13 @@ h1.bordered:after{
 }
 
 .navbar a{
-	color:#ffffff !important;
+	    color:#d4beb4 !important;
 	margin-bottom: auto;
 	overflow: hidden;
 }
 
 .nav{
-	width:80%;
+	width:100%;
 	margin:auto;
 	text-align: center;
 	float: none;
@@ -88,20 +102,60 @@ h1.bordered:after{
 	color:#222222 !important;
 }
 
+
+#resume p{
+     text-align: center;
+
+}
+
+#home {
+       max-width:600px;
+    margin: 0 auto;
+}
+
 #skills{
     max-width: 600px;
     text-align: center;
     margin:0 auto;
+    margin-top:20px;
 }
 
-#skills h2{
-    	background-image: url(images/backgroundSection.png); 
+#experience{
+    max-width:600px;
+    text-align: justify;
+    margin: 0 auto; 
+}
+
+#formation{
+    max-width:600px;
+    text-align: justify;
+    margin: 0 auto;  
+}
+
+#hobbies{
+    max-width:600px;
+    text-align: justify;
+    margin: 0 auto;  
+}
+
+#contacts{
+    max-width:300px;
+    text-align: justify;
+    margin: 0 auto;  
+}
+
+#skills h3{
+    background-image: url(images/backgroundSection.png); 
 	background-repeat: true;
  	background-size: cover;	
 }
 
 .listSkills{
     text-align:center;
+}
+
+#centerClasse{
+    text-align:center !important;
 }
 
 #skillJava{
@@ -122,17 +176,48 @@ h1.bordered:after{
 }
 #skillHtml{
     background: url('images/html.png') no-repeat;
-      background-size: 70px;
+    background-size: 70px;
+    background-position: 5px;
 }
 #skillCss{
     background: url('images/CSSLogo.png') no-repeat;
-      background-size: 50px;
+    background-size: 50px;
+    background-position: 8px;
 }
 
+#skillAngular{
+    background: url('images/angularLogo.png') no-repeat;
+    background-size: 70px;
+    background-position: 0px;
+}
 #skillPs{
     background: url('images/PSLogo.png') no-repeat;
-      background-size: 70px;
-           background-position: 5px;
+    background-size: 70px;
+    background-position: 5px;
+}
+
+#skillEclipse{
+    background: url('images/eclipseLogo.png') no-repeat;
+    background-size: 70px;
+    background-position: 5px;
+}
+
+#skillAi{
+    background: url('images/aiLogo.png') no-repeat;
+    background-size: 70px;
+    background-position: 2px;
+}
+
+#skillFrench{
+    background: url('images/frenchFlag.png') no-repeat;
+    background-size: 70px;
+    background-position: 4px 5px;
+}
+
+#skillEng{
+    background: url('images/unionJak.png') no-repeat;
+    background-size: 75px;
+    background-position: 4px 5px;
 }
 
 .skills-img{
@@ -141,10 +226,14 @@ h1.bordered:after{
 	margin:15px;
 }
 
-.logoBoites-img{
-	height: 100px;
-	width: 250px;
+.imgLogo{
+	height: 45px;
+	width: 45px;
 	margin: 10px;
+    border-radius: 25px 25px 25px 25px;
+    border-style:solid;
+        border-width: 5px;
+        border-color: black;
 }
 
 .blockBoites{
@@ -191,3 +280,45 @@ h1.bordered:after{
 	background-color: #aaaaaa;
 }
 
+.titleExp{
+    text-align: center;
+ 	text-transform: uppercase;
+	font-weight: bold !important;
+	font-style: normal;
+    letter-spacing: 1px;
+    line-height: 100px;
+    cursor: pointer;
+    font: 20px Arial;
+    padding:10px;
+	background-color: rgba(23, 8, 0, 0.8);
+    color:rgba(200, 150, 150, 1);
+}
+
+h1{
+    text-transform: uppercase;
+	font-weight: bold !important;
+	font-style: normal;
+    letter-spacing: 1px;
+    line-height: 100px;
+    font: 20px Arial;
+    padding:10px;
+}
+
+.titleExp:hover{
+       color:rgba(230, 130, 87, 1);
+}
+
+.subTitleExp{
+    text-align: center;
+    font:20px Arial;
+    font-weight: bold !important;
+}
+
+#resume h1{
+       color:rgba(230, 130, 87, 1);
+       font: 80px Arial !important;
+       text-shadow: 1px 0 black, 0 1px black, 5px 0 black, 0 1px black;
+}
+#resume p{
+       font: 40px Arial !important;
+}
