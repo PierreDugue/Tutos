@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
 @font-face {
 	font-weight: normal;
 	font-style: normal;
@@ -315,12 +316,13 @@ h1{
 }
 
 #resume h1{
-       color:rgba(230, 130, 87, 1);
-       font: 80px Arial !important;
-       text-shadow: 1px 0 black, 0 1px black, 5px 0 black, 0 1px black;
+       color:black;
+       font-family: 'Inconsolata' ;
+       font-size: 100px !important;
 }
 #resume p{
-       font: 40px Arial !important;
+      color:black;
+       font: 50px Arial !important;
 }
 
 .forMobileSkills ul{
